@@ -366,7 +366,7 @@ namespace FancyScrollView
                 scrolling = true;
             }
 
-            var position = currentPosition + scrollDelta / ViewportSize * scrollSensitivity;
+            var position = currentPosition + scrollDelta / ViewportSize * -scrollSensitivity * 70;
             if (movementType == MovementType.Clamped)
             {
                 position += CalculateOffset(position);
